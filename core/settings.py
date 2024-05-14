@@ -33,7 +33,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')  # пароль к django project
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'PORT').split(',')
 
 # Application definition
 
